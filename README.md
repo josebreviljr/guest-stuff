@@ -1,13 +1,13 @@
 # Guest Mac Setup Script
 
-This repository contains a lightweight, no-dependencies, macOS-native bash script that configures any guest or public Mac for quick use — and then restores it back to its original state when you're done.
+This repository contains a lightweight, **no-dependencies**, macOS-native bash script that configures any guest or public Mac for quick use — and then restores it back to its original state when you're done.
 
 The goal:  
 **Curl → Run → Work → Restore → Leave No Trace**
 
 ---
 
-## Features
+## ✨ Features
 
 ### **Setup Mode (`setup`)**
 - Installs **Firefox** automatically if it is not already installed.
@@ -42,3 +42,19 @@ No Homebrew, no dockutil, no third-party software.
 ## 📦 Backup Location
 
 Backups are stored in:
+~/.guest_env_backup/dock.plist
+
+This folder is created automatically during setup and reused during restore.
+
+---
+
+## 🚀 Usage
+
+### **1. Setup the guest Mac**
+
+```bash
+bash <(curl -fsSL https://raw.githubusercontent.com/<YOUR_USERNAME>/guest-mac-setup/main/setup-guest-mac.sh) setup ```
+
+### **2. Restore the guest Mac**
+
+```bash <(curl -fsSL https://raw.githubusercontent.com/<YOUR_USERNAME>/guest-mac-setup/main/setup-guest-mac.sh) restore```
